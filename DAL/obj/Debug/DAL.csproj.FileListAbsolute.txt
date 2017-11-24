@@ -1,0 +1,12 @@
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\bin\Debug\DAL.dll
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\bin\Debug\DAL.pdb
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\bin\Debug\System.Data.SqlServerCe.dll
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\obj\Debug\DAL.dll
+c:\users\wajdi\documents\visual studio 2015\Projects\facture\DAL\obj\Debug\DAL.pdb
+C:\Users\Assid\Desktop\facture\DAL\bin\Debug\DAL.dll
+C:\Users\Assid\Desktop\facture\DAL\bin\Debug\DAL.pdb
+C:\Users\Assid\Desktop\facture\DAL\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Assid\Desktop\facture\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Assid\Desktop\facture\DAL\obj\Debug\DAL.dll
+C:\Users\Assid\Desktop\facture\DAL\obj\Debug\DAL.pdb
