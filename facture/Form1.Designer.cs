@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
@@ -484,41 +484,41 @@
 
         #endregion
 
-        private DevExpress.XtraBars.Navigation.TileBar tileBar;
-        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame;
-        private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroupTables;
-        private DevExpress.XtraBars.Navigation.TileBarItem eployeesTileBarItem;
-        private DevExpress.XtraBars.Navigation.TileBarItem customersTileBarItem;
-        private DevExpress.XtraBars.Navigation.NavigationPage employeesNavigationPage;
-        private DevExpress.XtraBars.Navigation.NavigationPage customersNavigationPage;
-        private DevExpress.XtraEditors.LabelControl employeesLabelControl;
-        private DevExpress.XtraEditors.LabelControl customersLabelControl;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit Qte;
-        private DevExpress.XtraEditors.TextEdit prix;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit Date;
-        private DevExpress.XtraEditors.TextEdit NomC;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private System.Windows.Forms.ComboBox Ref;
-        private System.Windows.Forms.ComboBox Num;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        public DevExpress.XtraBars.Navigation.TileBar tileBar;
+        public DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame;
+        public DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroupTables;
+        public DevExpress.XtraBars.Navigation.TileBarItem eployeesTileBarItem;
+        public DevExpress.XtraBars.Navigation.TileBarItem customersTileBarItem;
+        public DevExpress.XtraBars.Navigation.NavigationPage employeesNavigationPage;
+        public DevExpress.XtraBars.Navigation.NavigationPage customersNavigationPage;
+        public DevExpress.XtraEditors.LabelControl employeesLabelControl;
+        public DevExpress.XtraEditors.LabelControl customersLabelControl;
+        public DevExpress.XtraEditors.SimpleButton simpleButton1;
+        public DevExpress.XtraEditors.SimpleButton simpleButton3;
+        public DevExpress.XtraEditors.SimpleButton simpleButton2;
+        public DevExpress.XtraEditors.GroupControl groupControl1;
+        public DevExpress.XtraEditors.SimpleButton simpleButton5;
+        public DevExpress.XtraEditors.LabelControl labelControl3;
+        public DevExpress.XtraEditors.LabelControl labelControl2;
+        public DevExpress.XtraEditors.LabelControl labelControl1;
+        public DevExpress.XtraEditors.TextEdit Qte;
+        public DevExpress.XtraEditors.TextEdit prix;
+        public DevExpress.XtraEditors.GroupControl groupControl2;
+        public DevExpress.XtraEditors.SimpleButton simpleButton6;
+        public DevExpress.XtraEditors.LabelControl labelControl4;
+        public DevExpress.XtraEditors.LabelControl labelControl5;
+        public DevExpress.XtraEditors.LabelControl labelControl6;
+        public DevExpress.XtraEditors.TextEdit Date;
+        public DevExpress.XtraEditors.TextEdit NomC;
+        public DevExpress.XtraEditors.SimpleButton simpleButton7;
+        public DevExpress.XtraEditors.SimpleButton simpleButton8;
+        public DevExpress.XtraEditors.SimpleButton simpleButton9;
+        public DevExpress.XtraEditors.SimpleButton simpleButton10;
+        public System.Windows.Forms.ComboBox Ref;
+        public System.Windows.Forms.ComboBox Num;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public DevExpress.XtraGrid.GridControl gridControl2;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

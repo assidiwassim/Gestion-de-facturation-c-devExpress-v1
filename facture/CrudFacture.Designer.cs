@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
@@ -262,24 +262,24 @@
         }
 
         #endregion
-        private DevExpress.XtraBars.Ribbon.RibbonControl mainRibbonControl;
-        private DevExpress.XtraBars.Ribbon.RibbonPage mainRibbonPage;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup mainRibbonPageGroup;
-        private DevExpress.XtraBars.BarButtonItem bbiSave;
-        private DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
-        private DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
-        private DevExpress.XtraBars.BarButtonItem bbiReset;
-        private DevExpress.XtraBars.BarButtonItem bbiDelete;
-        private DevExpress.XtraBars.BarButtonItem bbiClose;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl NomClient;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.TextEdit num;
-        private DevExpress.XtraEditors.TextEdit NomC;
-        private DevExpress.XtraEditors.DateEdit Date;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.LabelControl Numero;
+        public DevExpress.XtraBars.Ribbon.RibbonControl mainRibbonControl;
+        public DevExpress.XtraBars.Ribbon.RibbonPage mainRibbonPage;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup mainRibbonPageGroup;
+        public DevExpress.XtraBars.BarButtonItem bbiSave;
+        public DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
+        public DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
+        public DevExpress.XtraBars.BarButtonItem bbiReset;
+        public DevExpress.XtraBars.BarButtonItem bbiDelete;
+        public DevExpress.XtraBars.BarButtonItem bbiClose;
+        public DevExpress.XtraEditors.SimpleButton simpleButton1;
+        public DevExpress.XtraEditors.LabelControl NomClient;
+        public DevExpress.XtraEditors.LabelControl labelControl3;
+        public DevExpress.XtraEditors.SimpleButton simpleButton2;
+        public DevExpress.XtraEditors.TextEdit num;
+        public DevExpress.XtraEditors.TextEdit NomC;
+        public DevExpress.XtraEditors.DateEdit Date;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public DevExpress.XtraEditors.LabelControl Numero;
     }
 }

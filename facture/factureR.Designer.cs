@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(factureR));
@@ -939,77 +939,77 @@
 
         #endregion
 
-        private DevExpress.XtraPrinting.Preview.DocumentViewer documentViewer1;
-        private DevExpress.XtraPrinting.Preview.DocumentViewerBarManager documentViewerBarManager1;
-        private DevExpress.XtraPrinting.Preview.PreviewBar previewBar1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiDocumentMap;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiParameters;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiThumbnails;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiFind;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiHighlightEditingFields;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiCustomize;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiOpen;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiSave;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPrint;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPrintDirect;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPageSetup;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiEditPageHF;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiScale;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiHandTool;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiMagnifier;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiZoomOut;
-        private DevExpress.XtraPrinting.Preview.ZoomBarEditItem bbiZoom;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox printPreviewRepositoryItemComboBox1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiZoomIn;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowFirstPage;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowPrevPage;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowNextPage;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowLastPage;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiMultiplePages;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiFillBackground;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiWatermark;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiExportFile;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiSendFile;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiClosePreview;
-        private DevExpress.XtraPrinting.Preview.PreviewBar previewBar2;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem1;
-        private DevExpress.XtraBars.BarStaticItem verticalSpaceItem;
-        private DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem2;
-        private DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem zoomTrackBarEditItem1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
-        private DevExpress.XtraPrinting.Preview.PreviewBar previewBar3;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miFile;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miView;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miPageLayout;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem miPageLayoutFacing;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem miPageLayoutContinuous;
-        private DevExpress.XtraBars.BarToolbarsListItem miToolbars;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miBackground;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem2;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem3;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem4;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem5;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem6;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem7;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem8;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem9;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem10;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem11;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem12;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem13;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem14;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem15;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem16;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem17;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem18;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem19;
+        public DevExpress.XtraPrinting.Preview.DocumentViewer documentViewer1;
+        public DevExpress.XtraPrinting.Preview.DocumentViewerBarManager documentViewerBarManager1;
+        public DevExpress.XtraPrinting.Preview.PreviewBar previewBar1;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiDocumentMap;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiParameters;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiThumbnails;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiFind;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiHighlightEditingFields;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiCustomize;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiOpen;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiSave;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPrint;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPrintDirect;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiPageSetup;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiEditPageHF;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiScale;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiHandTool;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiMagnifier;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiZoomOut;
+        public DevExpress.XtraPrinting.Preview.ZoomBarEditItem bbiZoom;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox printPreviewRepositoryItemComboBox1;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiZoomIn;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowFirstPage;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowPrevPage;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowNextPage;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiShowLastPage;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiMultiplePages;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiFillBackground;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiWatermark;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiExportFile;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiSendFile;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiClosePreview;
+        public DevExpress.XtraPrinting.Preview.PreviewBar previewBar2;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem1;
+        public DevExpress.XtraBars.BarStaticItem verticalSpaceItem;
+        public DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem1;
+        public DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem1;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem2;
+        public DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem zoomTrackBarEditItem1;
+        public DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
+        public DevExpress.XtraPrinting.Preview.PreviewBar previewBar3;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miFile;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miView;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miPageLayout;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem miPageLayoutFacing;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarItem miPageLayoutContinuous;
+        public DevExpress.XtraBars.BarToolbarsListItem miToolbars;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewSubItem miBackground;
+        public DevExpress.XtraBars.BarDockControl barDockControlTop;
+        public DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        public DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        public DevExpress.XtraBars.BarDockControl barDockControlRight;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem1;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem2;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem3;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem4;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem5;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem6;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem7;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem8;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem9;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem10;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem11;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem12;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem13;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem14;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem15;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem16;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem17;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem18;
+        public DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem19;
     }
 }

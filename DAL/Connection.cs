@@ -12,7 +12,7 @@ namespace DAL
     {
         public static SqlCeConnection GetConnection()
         {
-            return new SqlCeConnection(@"Data Source=Facture.sdf");
+            return new SqlCeConnection(@"Data Source=C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\Facture.sdf");
         }
     }
 }

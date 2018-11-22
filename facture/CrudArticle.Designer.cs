@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -233,22 +233,22 @@
 
         #endregion
 
-        private DevExpress.XtraBars.Ribbon.RibbonPage mainRibbonPage;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup mainRibbonPageGroup;
-        private DevExpress.XtraBars.BarButtonItem bbiSave;
-        private DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
-        private DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
-        private DevExpress.XtraBars.BarButtonItem bbiReset;
-        private DevExpress.XtraBars.BarButtonItem bbiClose;
-        private DevExpress.XtraBars.Ribbon.RibbonControl mainRibbonControl;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraBars.BarButtonItem bbiDelete;
-        private DevExpress.XtraEditors.TextEdit Ref;
-        private DevExpress.XtraEditors.TextEdit Desi;
-        private DevExpress.XtraEditors.TextEdit Prix;
-        private DevExpress.XtraEditors.TextEdit Qte;
+        public DevExpress.XtraBars.Ribbon.RibbonPage mainRibbonPage;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup mainRibbonPageGroup;
+        public DevExpress.XtraBars.BarButtonItem bbiSave;
+        public DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
+        public DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
+        public DevExpress.XtraBars.BarButtonItem bbiReset;
+        public DevExpress.XtraBars.BarButtonItem bbiClose;
+        public DevExpress.XtraBars.Ribbon.RibbonControl mainRibbonControl;
+        public DevExpress.XtraEditors.LabelControl labelControl1;
+        public DevExpress.XtraEditors.LabelControl labelControl2;
+        public DevExpress.XtraEditors.LabelControl labelControl3;
+        public DevExpress.XtraEditors.LabelControl labelControl4;
+        public DevExpress.XtraBars.BarButtonItem bbiDelete;
+        public DevExpress.XtraEditors.TextEdit Ref;
+        public DevExpress.XtraEditors.TextEdit Desi;
+        public DevExpress.XtraEditors.TextEdit Prix;
+        public DevExpress.XtraEditors.TextEdit Qte;
     }
 }
