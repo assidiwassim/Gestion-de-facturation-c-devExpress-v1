@@ -34,7 +34,7 @@ namespace facture
 
       
       
-        private void bbiSave_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             
             if (value == 1)
@@ -176,7 +176,7 @@ namespace facture
             }
         }
 
-        private void bbiClose_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
         }
@@ -215,6 +215,8 @@ namespace facture
         {
 
         }
-    }
+
+		
+	}
      
 }
