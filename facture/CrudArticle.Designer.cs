@@ -60,21 +60,21 @@
 			// 
 			// Ref
 			// 
-			this.Ref.Location = new System.Drawing.Point(145, 190);
+			this.Ref.Location = new System.Drawing.Point(152, 189);
 			this.Ref.Name = "Ref";
 			this.Ref.Size = new System.Drawing.Size(190, 20);
 			this.Ref.TabIndex = 1;
 			// 
 			// Desi
 			// 
-			this.Desi.Location = new System.Drawing.Point(145, 216);
+			this.Desi.Location = new System.Drawing.Point(152, 215);
 			this.Desi.Name = "Desi";
 			this.Desi.Size = new System.Drawing.Size(190, 20);
 			this.Desi.TabIndex = 2;
 			// 
 			// Prix
 			// 
-			this.Prix.Location = new System.Drawing.Point(145, 242);
+			this.Prix.Location = new System.Drawing.Point(152, 241);
 			this.Prix.Name = "Prix";
 			this.Prix.Size = new System.Drawing.Size(190, 20);
 			this.Prix.TabIndex = 3;
@@ -82,7 +82,7 @@
 			// 
 			// Qte
 			// 
-			this.Qte.Location = new System.Drawing.Point(145, 268);
+			this.Qte.Location = new System.Drawing.Point(152, 267);
 			this.Qte.Name = "Qte";
 			this.Qte.Size = new System.Drawing.Size(190, 20);
 			this.Qte.TabIndex = 4;
@@ -90,7 +90,7 @@
 			// 
 			// labelControl1
 			// 
-			this.labelControl1.Location = new System.Drawing.Point(45, 193);
+			this.labelControl1.Location = new System.Drawing.Point(52, 192);
 			this.labelControl1.Name = "labelControl1";
 			this.labelControl1.Size = new System.Drawing.Size(50, 13);
 			this.labelControl1.TabIndex = 5;
@@ -98,7 +98,7 @@
 			// 
 			// labelControl2
 			// 
-			this.labelControl2.Location = new System.Drawing.Point(45, 223);
+			this.labelControl2.Location = new System.Drawing.Point(54, 219);
 			this.labelControl2.Name = "labelControl2";
 			this.labelControl2.Size = new System.Drawing.Size(56, 13);
 			this.labelControl2.TabIndex = 6;
@@ -106,7 +106,7 @@
 			// 
 			// labelControl3
 			// 
-			this.labelControl3.Location = new System.Drawing.Point(45, 249);
+			this.labelControl3.Location = new System.Drawing.Point(52, 248);
 			this.labelControl3.Name = "labelControl3";
 			this.labelControl3.Size = new System.Drawing.Size(55, 13);
 			this.labelControl3.TabIndex = 7;
@@ -114,7 +114,7 @@
 			// 
 			// labelControl4
 			// 
-			this.labelControl4.Location = new System.Drawing.Point(45, 275);
+			this.labelControl4.Location = new System.Drawing.Point(52, 274);
 			this.labelControl4.Name = "labelControl4";
 			this.labelControl4.Size = new System.Drawing.Size(42, 13);
 			this.labelControl4.TabIndex = 8;
@@ -178,9 +178,9 @@
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage2});
-			this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+			this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
 			this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-			this.ribbonControl1.Size = new System.Drawing.Size(435, 116);
+			this.ribbonControl1.Size = new System.Drawing.Size(422, 130);
 			this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
 			// 
 			// barButtonItem2
@@ -211,6 +211,7 @@
 			this.barButtonItem5.Id = 5;
 			this.barButtonItem5.ImageOptions.ImageUri.Uri = "Reset";
 			this.barButtonItem5.Name = "barButtonItem5";
+			this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
 			// 
 			// barButtonItem6
 			// 
@@ -239,7 +240,6 @@
 			// 
 			this.ribbonPageGroup6.AllowTextClipping = false;
 			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem2);
-			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem5);
 			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem7);
 			this.ribbonPageGroup6.Name = "ribbonPageGroup6";
 			this.ribbonPageGroup6.ShowCaptionButton = false;
@@ -250,8 +250,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-			this.ClientSize = new System.Drawing.Size(435, 335);
-			this.Controls.Add(this.ribbonControl1);
+			this.ClientSize = new System.Drawing.Size(422, 336);
 			this.Controls.Add(this.labelControl4);
 			this.Controls.Add(this.labelControl3);
 			this.Controls.Add(this.labelControl2);
@@ -260,7 +259,9 @@
 			this.Controls.Add(this.Prix);
 			this.Controls.Add(this.Desi);
 			this.Controls.Add(this.Ref);
+			this.Controls.Add(this.ribbonControl1);
 			this.Name = "CrudArticle";
+			this.Ribbon = this.ribbonControl1;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Load += new System.EventHandler(this.CrudArticle_Load);
 			((System.ComponentModel.ISupportInitialize)(this.Ref.Properties)).EndInit();

@@ -51,7 +51,8 @@ namespace facture
                     Desi.Text = "";
                     Prix.Text = "";
                     Qte.Text = "";
-                }
+					this.Close();
+				}
                 catch(Exception ex)
                 {
                     XtraMessageBox.Show(ex.Message);

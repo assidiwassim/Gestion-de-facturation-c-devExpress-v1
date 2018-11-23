@@ -39,7 +39,7 @@ namespace facture
 
         }
 
-        private void bbiSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
          
             if (val == "-1")
@@ -124,5 +124,7 @@ namespace facture
 
             }
         }
-    }
+
+		
+	}
 }
