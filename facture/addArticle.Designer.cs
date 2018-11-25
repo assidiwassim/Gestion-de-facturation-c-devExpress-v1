@@ -175,6 +175,7 @@
 			this.Ref.Name = "Ref";
 			this.Ref.Size = new System.Drawing.Size(121, 21);
 			this.Ref.TabIndex = 5;
+			this.Ref.SelectedIndexChanged += new System.EventHandler(this.Ref_SelectedIndexChanged);
 			this.Ref.TextChanged += new System.EventHandler(this.Ref_TextChanged);
 			// 
 			// Des

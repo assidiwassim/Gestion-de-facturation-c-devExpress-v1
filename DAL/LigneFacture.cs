@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class LigneFactuer
+    public class LigneFacture
     {
 
         public int IdFacture { get; set; }
@@ -14,7 +14,7 @@ namespace DAL
         public int Quantite { get; set; }
         public float Montant { get; set; }
 
-        public LigneFactuer(int Id_Facture, int Id_Article, int Quantite, float Montant)
+        public LigneFacture(int Id_Facture, int Id_Article, int Quantite, float Montant)
         {
             this.IdArticle = Id_Article;
             this.IdFacture = Id_Facture;
@@ -23,7 +23,7 @@ namespace DAL
 
 
         }
-        public LigneFactuer()
+        public LigneFacture()
         {
 
         }

@@ -11,14 +11,14 @@ namespace DAL
        
 
         public string Numero { get; set; }
-        public string NomClient { get; set; }
+        public string Nom_Client { get; set; }
         public DateTime Date { get; set; }
       
 
         public Facture(string Numero, string NomClient, DateTime Date)
         {
             this.Numero = Numero;
-            this.NomClient = NomClient;
+            this.Nom_Client = NomClient;
             this.Date = Date;
            
         }
@@ -26,7 +26,7 @@ namespace DAL
         public Facture()
         {
             this.Numero = "";
-            this.NomClient = "";
+            this.Nom_Client = "";
             this.Date = DateTime.Now;
         }
 

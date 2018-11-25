@@ -9,24 +9,24 @@ namespace DAL
    public class Article
     {
         public string Reference { get; set; }
-        public string Disignation { get; set; }
-        public float PrixU { get; set; }
-        public int Qte2 { get; set; }
+        public string Designation { get; set; }
+        public float Prix_unitaire { get; set; }
+        public int Qantite { get; set; }
 
         public Article(string Reference, string Disignation, float PrixU, int qte2)
         {
             this.Reference = Reference;
-            this.Disignation = Disignation;
-            this.PrixU = PrixU;
-            this.Qte2 = qte2;
+            this.Designation = Disignation;
+            this.Prix_unitaire = PrixU;
+            this.Qantite = qte2;
         }
 
         public Article()
         {
             this.Reference = "";
-            this.Disignation = "";
-            this.PrixU = float.NaN ;
-            this.Qte2 = 0;
+            this.Designation = "";
+            this.Prix_unitaire = float.NaN ;
+            this.Qantite = 0;
         }
 
 

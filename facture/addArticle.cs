@@ -57,14 +57,14 @@ namespace facture
                     int oldQte = DAL.DAL.getQte(Ref.Text);
                     DAL.DAL.UpdateQte(Ref.Text, oldQte - Int32.Parse(Qte.Text));
                     c.gridControl1.DataSource = c.dt;
+					this.Close();
 
-
-                }
+				}
                 else
                 {
-                    XtraMessageBox.Show("choisie un montant mois de " + DAL.DAL.getQte(Ref.Text));
+                    XtraMessageBox.Show("Choisie un montant mois de " + DAL.DAL.getQte(Ref.Text));
                 }
-                this.Close();
+              
             }
 
       
@@ -78,13 +78,18 @@ namespace facture
             string[] a = DAL.DAL.getDesigPrix(Ref.Text);
             Des.Text = a[0];
             Prix.Text = a[1];
-            if (Qte.Text == "0")
+			Des.ReadOnly = true;
+			Prix.ReadOnly = true;
+
+			if (Qte.Text == "0")
             {
-                Des.ReadOnly = true;
-                Qte.ReadOnly = true;
-                Prix.ReadOnly = true;
-             
-            }
+				Qte.ReadOnly = true;
+
+			}
+			else
+			{
+				Qte.ReadOnly = false;
+			}
 
         }
 
@@ -92,5 +97,10 @@ namespace facture
         {
             this.Close();
         }
-    }
+
+		private void Ref_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

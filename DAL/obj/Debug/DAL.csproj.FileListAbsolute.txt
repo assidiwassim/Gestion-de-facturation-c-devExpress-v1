@@ -13,6 +13,6 @@ C:\Users\Assid\Desktop\facture\DAL\obj\Debug\DAL.pdb
 C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\bin\Debug\DAL.dll
 C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\bin\Debug\DAL.pdb
 C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\bin\Debug\System.Data.SqlServerCe.dll
-C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\obj\Debug\DAL.dll
 C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\obj\Debug\DAL.pdb
+C:\Users\wassim\Documents\GitHub\Gestion-de-facturation-c-devExpress-v1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

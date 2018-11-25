@@ -45,13 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Articlefacture.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="DAL.cs" />
-    <Compile Include="DALLingne.cs" />
     <Compile Include="Article.cs" />
     <Compile Include="Facture.cs" />
-    <Compile Include="LigneFactuer.cs" />
+    <Compile Include="LigneFacture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repport.cs" />
   </ItemGroup>

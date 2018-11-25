@@ -53,7 +53,7 @@ namespace facture
 
                     int idatricle = DAL.DAL.getId(Convert.ToString(row[2]));
 
-                    DAL.LigneFactuer f2 = new DAL.LigneFactuer(id, idatricle, Int32.Parse(Convert.ToString(row[0])), float.Parse(Convert.ToString(row[1])));
+                    DAL.LigneFacture f2 = new DAL.LigneFacture(id, idatricle, Int32.Parse(Convert.ToString(row[0])), float.Parse(Convert.ToString(row[1])));
                     DAL.DAL.InsertF(f2);
                   
                 }
@@ -88,7 +88,7 @@ namespace facture
 
                         int idatricle = DAL.DAL.getId(Convert.ToString(row[2]));
 
-                        DAL.LigneFactuer f2 = new DAL.LigneFactuer(idfact, idatricle, Int32.Parse(Convert.ToString(row[0])), float.Parse(Convert.ToString(row[1])));
+                        DAL.LigneFacture f2 = new DAL.LigneFacture(idfact, idatricle, Int32.Parse(Convert.ToString(row[0])), float.Parse(Convert.ToString(row[1])));
                         DAL.DAL.InsertF(f2);
                         
 

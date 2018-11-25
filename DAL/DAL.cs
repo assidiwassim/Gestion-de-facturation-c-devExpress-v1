@@ -1,45 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlServerCe;
-using System.Windows.Forms;
+
 
 namespace DAL
 {
     public class DAL
     {
-        public static int Insert(Article a)
+        public static int Insert_Article(Article a)
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
             string cm = "Insert into Article(Reference,Designation,Prix_unitaire,Quantite,status) values(?,?,?,?,1)";
             SqlCeCommand cmd = new SqlCeCommand(cm,cnn);
             cmd.Parameters.AddWithValue("Reference",a.Reference);
-            cmd.Parameters.AddWithValue("Designation", a.Disignation);
-            cmd.Parameters.AddWithValue("Prix_unitaire", a.PrixU);
-            cmd.Parameters.AddWithValue("Quantite", a.Qte2);
+            cmd.Parameters.AddWithValue("Designation", a.Designation);
+            cmd.Parameters.AddWithValue("Prix_unitaire", a.Prix_unitaire);
+            cmd.Parameters.AddWithValue("Quantite", a.Qantite);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
             return i;
         }
       
-        public static int Update1(Article e,string txt)
+        public static int Update1(Article e,string reference)
         { 
          
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "update [article] set reference='"+ e.Reference + "',Designation=?,Prix_unitaire=?,Quantite=? where Reference=?";
+            string cm = "update Article set reference='"+ e.Reference + "',Designation=?,Prix_unitaire=?,Quantite=? where Reference=?";
             SqlCeParameter pr = new SqlCeParameter();
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
           
-            cmd.Parameters.AddWithValue("Disignation", e.Disignation);
-            cmd.Parameters.AddWithValue("PrixUnitaire", e.PrixU);
-            cmd.Parameters.AddWithValue("qte", e.Qte2);
-            cmd.Parameters.AddWithValue("Ref", txt);
+            cmd.Parameters.AddWithValue("Disignation", e.Designation);
+            cmd.Parameters.AddWithValue("PrixUnitaire", e.Prix_unitaire);
+            cmd.Parameters.AddWithValue("qte", e.Qantite);
+            cmd.Parameters.AddWithValue("Ref", reference);
 
 
 
@@ -49,18 +46,18 @@ namespace DAL
         }
 
 
-        public static int Updatestate( string txt)
+        public static int Updatestate( string reference)
         {
           
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "update [article] set status=0 where Reference=?";
+            string cm = "update Article set status=0 where Reference=?";
             SqlCeParameter pr = new SqlCeParameter();
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
 
 
-            cmd.Parameters.AddWithValue("Ref", txt);
+            cmd.Parameters.AddWithValue("Ref", reference);
 
 
 
@@ -70,16 +67,16 @@ namespace DAL
         }
 
 
-        public static int UpdateQte(string Ref, int txt)
+        public static int UpdateQte(string reference, int quantite)
         {
           
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "update [article] set Quantite="+ txt +"where Reference=?";
+            string cm = "update Article set Quantite=" + quantite + "where Reference=?";
             SqlCeParameter pr = new SqlCeParameter();
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
-            cmd.Parameters.AddWithValue("Ref", Ref);
+            cmd.Parameters.AddWithValue("Ref", reference);
 
 
 
@@ -89,21 +86,21 @@ namespace DAL
         }
 
 
-        public static int Delete(string rf)
+        public static int Delete(string reference)
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm="delete from Article where reference='"+rf+"'";
+            string cm= "delete from Article where reference='" + reference + "'";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
             return i;
         }
-        public static DataTable SelectByRf(string rf)
+        public static DataTable SelectByRf(string reference)
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Reference='"+rf+"'";
+            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Reference= '" + reference + "' and status=1";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -114,11 +111,11 @@ namespace DAL
 
 
 
-        public static DataTable SelectByDes(string des)
+        public static DataTable SelectByDes(string designation)
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Designation='" + des + "'";
+            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Designation= '" + designation + "' and status=1";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -130,7 +127,7 @@ namespace DAL
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Prix_unitaire=" + prix + "";
+            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Prix_unitaire=" + prix + " and status=1 ";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -143,7 +140,7 @@ namespace DAL
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Prix_unitaire=" + prix +"and Quantite="+qte+"";
+            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Prix_unitaire="+ prix +" and Quantite="+qte+ " and status=1";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -155,7 +152,7 @@ namespace DAL
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Quantite=" + quantite +"";
+            string cm = "select Reference,Designation,Prix_unitaire,Quantite from Article where Quantite="+ quantite +" and status=1";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -175,21 +172,21 @@ namespace DAL
             cnn.Close();
             return dt;
         }
-        public static int getId(string rf)
+        public static int getId(string reference)
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select Id from Article where Reference='"+rf+"'";
+            string cm = "select Id from Article where Reference= '"+ reference + "' ";
             SqlCeCommand cmd = new SqlCeCommand(cm,cnn);
             int i = (int)cmd.ExecuteScalar();
             cnn.Close();
             return i;
         }
-        public static DataTable ChercherRef(string Ref)
+        public static DataTable ChercherRef(string reference)
         {
             SqlCeConnection cn = Connection.GetConnection();
             cn.Open();
-            string Req = "select Reference,Designation,Prix_unitaire from Article where Reference='" + Ref + "'";
+            string Req = "select Reference,Designation,Prix_unitaire from Article where Reference= '" + reference + "' and status=1";
             SqlCeCommand cmd = new SqlCeCommand(Req, cn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -198,11 +195,11 @@ namespace DAL
             return dt;
 
         }
-        public static DataTable Getarticle(string r)
+        public static DataTable Getarticle(string reference)
         {
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "select * from Article where status=1 and  Reference='" + r + "' ";
+            string cm = "select * from Article where status=1 and  Reference= '" + reference + "' and status=1 ";
             SqlCeParameter pr = new SqlCeParameter();
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
@@ -218,13 +215,13 @@ namespace DAL
             return dt;
 
         }
-        public static int Getref(string r)
+        public static int Getref(string reference)
         {
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "select count(*) from Article where Reference = '" + r + "'";
+            string cm = "select count(*) from Article where Reference = '" + reference + "' and status=1 ";
 
-            SqlCeCommand cmd = new SqlCeCommand(cm, connection);
+			SqlCeCommand cmd = new SqlCeCommand(cm, connection);
             int i = (int)cmd.ExecuteScalar();
 
             connection.Close();
@@ -237,8 +234,8 @@ namespace DAL
 
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            cm = "SELECT COUNT(*) FROM Article where Reference= '" + Reference + "'";
-            SqlCeCommand cmd = new SqlCeCommand(cm, connection);
+            cm = "SELECT COUNT(*) FROM Article where Reference= '" + Reference + "' and status=1 ";
+			SqlCeCommand cmd = new SqlCeCommand(cm, connection);
             return (int)cmd.ExecuteScalar();
 
         }
@@ -277,11 +274,11 @@ namespace DAL
             return dt;
         }
 
-        public static DataTable GetAllRefbyid(string refs)
+        public static DataTable GetAllRefbyid(string reference)
         {
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "select * from Article where Reference='" + refs + "'";
+            string cm = "select * from Article where Reference='" + reference + "'and status=1";
             SqlCeParameter pr = new SqlCeParameter();
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
@@ -292,12 +289,12 @@ namespace DAL
             connection.Close();
             return dt;
         }
-        public static int getQte(string refs)
+        public static int getQte(string reference)
         {
             int qte=0;
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "select Quantite  from Article where Reference='" + refs + "'";
+            string cm = "select Quantite  from Article where Reference= '" + reference + "' and status=1";
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
             SqlCeDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -306,13 +303,13 @@ namespace DAL
             }
             return qte;
         }
-        public static string[] getDesigPrix(string refs)
+        public static string[] getDesigPrix(string reference)
         {
             string Desig = "";
             string Pu = "";
             SqlCeConnection cn = Connection.GetConnection();
             cn.Open();
-            string Req = "select Designation,Prix_unitaire from Article where  Reference='" + refs + "' ";
+            string Req = "select Designation,Prix_unitaire from Article where  Reference= '" + reference + "' and status=1";
             SqlCeCommand cmd = new SqlCeCommand(Req, cn);
            SqlCeDataReader dr= cmd.ExecuteReader();
             while(dr.Read())
@@ -329,13 +326,13 @@ namespace DAL
 
 
 
-        public static string[] getRefPrix(string Des)
+        public static string[] getRefPrix(string designation)
         {
             string Desig = "";
             string Pu = "";
             SqlCeConnection cn = Connection.GetConnection();
             cn.Open();
-            string Req = "select Reference,Prix_unitaire from Article where  Designation='" + Des + "' ";
+            string Req = "select Reference,Prix_unitaire from Article where  Designation= '" + designation + "' and status = 1";
             SqlCeCommand cmd = new SqlCeCommand(Req, cn);
             SqlCeDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -345,13 +342,13 @@ namespace DAL
             }
             return new string[] { Desig, Pu };
         }
-        public static string[]getRefeDes(int pu)
+        public static string[]getRefeDes(int Prix_unitaire)
         {
             string Refs = "";
             string Des = "";
             SqlCeConnection cn = Connection.GetConnection();
             cn.Open();
-            string Req = "select Reference,Designation from Article where Prix_unitaire='" + pu + "' ";
+            string Req = "select Reference,Designation from Article where Prix_unitaire=" + Prix_unitaire + " and status=1";
             SqlCeCommand cmd = new SqlCeCommand(Req, cn);
             SqlCeDataReader dr = cmd.ExecuteReader();
             //cn.Close();
@@ -362,7 +359,7 @@ namespace DAL
             }
             return new string[] { Refs, Des };
         }
-        public static int Insert(Facture e)
+        public static int Insert(Facture f)
         {
             int i;
             string cm;
@@ -374,9 +371,9 @@ namespace DAL
 
             SqlCeCommand cmd = new SqlCeCommand(cm, connection);
 
-            cmd.Parameters.AddWithValue("Numero", e.Numero);
-            cmd.Parameters.AddWithValue("Nom_Client", e.NomClient);
-            cmd.Parameters.AddWithValue("Date", e.Date);
+            cmd.Parameters.AddWithValue("Numero", f.Numero);
+            cmd.Parameters.AddWithValue("Nom_Client", f.Nom_Client);
+            cmd.Parameters.AddWithValue("Date", f.Date);
             i=cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             cmd.CommandText = "SELECT @@IDENTITY";
@@ -390,44 +387,17 @@ namespace DAL
         }
 
 
-        public static int InsertF(LigneFactuer l)
-        {
-            int i;
-            string cm;
-
-            SqlCeConnection connection = Connection.GetConnection();
-            connection.Open();
-            cm = "insert into F(IdFacture,IdArticle,Quantite,Montant) Values (?,?,?,?)";
-            SqlCeParameter pr = new SqlCeParameter();
-
-            SqlCeCommand cmd = new SqlCeCommand(cm, connection);
-
-            cmd.Parameters.AddWithValue("fact", l.IdFacture);
-            cmd.Parameters.AddWithValue("article", l.IdArticle);
-            cmd.Parameters.AddWithValue("qte", l.Quantite);
-            cmd.Parameters.AddWithValue("Montant", l.Montant);
-            i = cmd.ExecuteNonQuery();
-            cmd.Parameters.Clear();
-            cmd.CommandText = "SELECT @@IDENTITY";
-
-            i = Convert.ToInt32(cmd.ExecuteScalar());
-            
-            connection.Close();
-            return i;
 
 
-        }
+		//optimisation
 
-
-
-
-        public static int getid(string refs)
+        public static int getid(string reference)
         {
             int id = 0;
             SqlCeConnection connection = Connection.GetConnection();
             connection.Open();
-            string cm = "select Id  from Article where Reference='" + refs + "'";
-            SqlCeCommand cmd = new SqlCeCommand(cm, connection);
+            string cm = "select Id  from Article where Reference= '" + reference + "' and status=1";
+			SqlCeCommand cmd = new SqlCeCommand(cm, connection);
             SqlCeDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -484,7 +454,7 @@ namespace DAL
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select F.Quantite,F.Montant,Article.Reference,Article.Designation,Article.Prix_unitaire from F,Article,Facture where F.IdFacture=Facture.Id and Article.Id=F.IdArticle and Facture.Id = " + id+"";
+            string cm = "select F.Quantite,F.Montant,Article.Reference,Article.Designation,Article.Prix_unitaire from LigneFacture F,Article,Facture where F.IdFacture=Facture.Id and Article.Id=F.IdArticle and Facture.Id = " + id+"";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -499,7 +469,7 @@ namespace DAL
             List<Repport> fl = new List<Repport>();
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "select F.Quantite,F.Montant,Article.Prix_unitaire from F,Article,Facture where F.IdFacture=Facture.Id and Article.Id=F.IdArticle and Facture.Id = " + id + "";
+            string cm = "select F.Quantite,F.Montant,Article.Prix_unitaire from LigneFacture F,Article,Facture where F.IdFacture=Facture.Id and Article.Id=F.IdArticle and Facture.Id = " + id + "";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -519,7 +489,7 @@ namespace DAL
         {
             SqlCeConnection cnn = Connection.GetConnection();
             cnn.Open();
-            string cm = "delete from F where IdFacture=" + id + "";
+            string cm = "delete from LigneFacture where IdFacture=" + id + "";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             int i = cmd.ExecuteNonQuery();
             cnn.Close();
@@ -536,7 +506,7 @@ namespace DAL
             string cm = "update Facture set Numero=?,Nom_Client=?,Date=? where Id="+ Num + "";
             SqlCeCommand cmd = new SqlCeCommand(cm, cnn);
             cmd.Parameters.AddWithValue("Numero", a.Numero);
-            cmd.Parameters.AddWithValue("Nom_Client", a.NomClient);
+            cmd.Parameters.AddWithValue("Nom_Client", a.Nom_Client);
             cmd.Parameters.AddWithValue("Date", a.Date);
            // cmd.Parameters.AddWithValue("Numero", a.Numero);
            
@@ -602,5 +572,33 @@ namespace DAL
             return dt;
         }
 
-    }
+		public static int InsertF(LigneFacture l)
+		{
+			int i;
+			string cm;
+
+			SqlCeConnection connection = Connection.GetConnection();
+			connection.Open();
+			cm = "insert into LigneFacture(IdFacture,IdArticle,Quantite,Montant) Values (?,?,?,?)";
+			SqlCeParameter pr = new SqlCeParameter();
+
+			SqlCeCommand cmd = new SqlCeCommand(cm, connection);
+
+			cmd.Parameters.AddWithValue("IdFacture", l.IdFacture);
+			cmd.Parameters.AddWithValue("IdArticle", l.IdArticle);
+			cmd.Parameters.AddWithValue("Quantite", l.Quantite);
+			cmd.Parameters.AddWithValue("Montant", l.Montant);
+			i = cmd.ExecuteNonQuery();
+			cmd.Parameters.Clear();
+			cmd.CommandText = "SELECT @@IDENTITY";
+
+			i = Convert.ToInt32(cmd.ExecuteScalar());
+
+			connection.Close();
+			return i;
+
+
+		}
+
+	}
 }

@@ -43,7 +43,7 @@ namespace facture
                 try
                 {
                     DAL.Article a = new Article(Ref.Text, Desi.Text, float.Parse(Prix.Text), Int32.Parse(Qte.Text));
-                    DAL.DAL.Insert(a);
+                    DAL.DAL.Insert_Article(a);
 
                     XtraMessageBox.Show("Enregistrer avec succès");
                     f1.gridControl1.DataSource = DAL.DAL.SelectAll();
@@ -65,9 +65,6 @@ namespace facture
                 try
                 {
                     DAL.Article a = new Article(Ref.Text, Desi.Text, float.Parse(Prix.Text), Int32.Parse(Qte.Text));
-                    
-                   // DAL.DAL.Insert(a);
-                  //  DAL.DAL.Delete(x);
                     DAL.DAL.Update1(a, id);
                     XtraMessageBox.Show("Modifier avec succès");
                     f1.gridControl1.DataSource = DAL.DAL.SelectAll();
@@ -95,7 +92,7 @@ namespace facture
                 try
                 {
                     DAL.Article a = new Article(Ref.Text, Desi.Text, float.Parse(Prix.Text), Int32.Parse(Qte.Text));
-                    DAL.DAL.Insert(a);
+                    DAL.DAL.Insert_Article(a);
                     XtraMessageBox.Show("Enregistrer avec succès");
                     f1.gridControl1.DataSource = DAL.DAL.SelectAll();
                     Ref.Text = "";
@@ -140,7 +137,7 @@ namespace facture
                 try
                 {
                     DAL.Article a = new Article(Ref.Text, Desi.Text, float.Parse(Prix.Text), Int32.Parse(Qte.Text));
-                    DAL.DAL.Insert(a);
+                    DAL.DAL.Insert_Article(a);
                     XtraMessageBox.Show("Enregistrer avec succès");
                     f1.gridControl1.DataSource = DAL.DAL.SelectAll();
                     Ref.Text = "";
