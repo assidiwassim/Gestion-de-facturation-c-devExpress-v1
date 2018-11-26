@@ -17,7 +17,8 @@ namespace facture
         public Form1()
         {
             InitializeComponent();
-            DataTable dt = DAL.DAL.GetAllRef();
+			this.WindowState = FormWindowState.Maximized;
+			DataTable dt = DAL.DAL.GetAllRef();
 
             foreach (DataRow row in dt.Rows)
             {
@@ -53,7 +54,7 @@ namespace facture
         }
 
         //c bon
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void simpleButton1_Click_1(object sender, EventArgs e)
         {
             CrudArticle c = new CrudArticle(this, "");
 
@@ -348,5 +349,7 @@ namespace facture
         {
 
         }
-    }
+
+	
+	}
 }
